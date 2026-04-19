@@ -1,0 +1,57 @@
+package com.sunbeam;
+
+public class Queue {
+	private int[] arr;
+	private int SIZE;
+	private int front, rear;
+	
+	public Queue(int size) {
+		SIZE  = size;
+		arr = new int[SIZE];
+		front = rear = -1;
+	}
+	
+	public void offer(int value) {
+		if(isFull()) {
+			System.out.println("Queue is Full!");
+		}
+		else {
+			rear++;
+			arr[rear] = value;
+		}
+	}
+	public int poll() {
+		int temp = -1;
+		if(isEmpty()) {
+			System.out.println("Queue is Empty.");
+			return -1;
+		}
+		else {
+			temp = arr[front+1];
+			front++;
+			if(front == rear) {
+				front = rear = -1;
+			}
+		}
+		return temp;
+	}
+	public int peek() {
+		int temp =-1;
+		if(isEmpty()) {
+			System.out.println("Queue is Empty.");
+			return -1;
+		}
+		else {
+			temp = arr[front+1];
+		}
+		return temp;
+	}
+
+	public boolean isFull() {
+		return rear == SIZE-1;
+	}
+	public boolean isEmpty() {
+		return front == rear;
+	}
+}
+

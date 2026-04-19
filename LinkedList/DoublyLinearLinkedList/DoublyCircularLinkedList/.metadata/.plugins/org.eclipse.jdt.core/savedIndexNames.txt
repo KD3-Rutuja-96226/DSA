@@ -1,0 +1,17 @@
+INDEX VERSION 1.134+D:\MyAssigments\DSA\LinkedList\DoublyLinearLinkedList\DoublyCircularLinkedList\.metadata\.plugins\org.eclipse.jdt.core
+2899741210.index
+3762514668.index
+3676480325.index
+4294856773.index
+2895891832.index
+4043922082.index
+1872185076.index
+563837387.index
+2234634515.index
+4133430966.index
+1865797976.index
+23298919.index
+701733989.index
+1261347749.index
+3755962217.index
+4008277627.index
